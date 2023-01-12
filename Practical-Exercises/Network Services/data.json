@@ -1,0 +1,84 @@
+{
+    "rack": [{
+            "server": {
+                "dev_id": "S1",
+                "server_name": "svr1",
+                "domain": "biasc.be",
+                "ip-address": "10.2.3.1",
+                "os": "linux",
+                "server_type": "vm",
+                "services": [{
+                        "service": "ad",
+                        "service_type": "vm",
+                        "protocol": "tcp",
+                        "port": "389"
+                    },
+                    {
+                        "service": "dns",
+                        "service_type": "vm",
+                        "protocol": "udp",
+                        "port": "53"
+                    },
+                    {
+                        "service": "ntp",
+                        "service_type": "vm",
+                        "protocol": "tcp",
+                        "port": "123"
+                    }
+                ]
+            }
+        },
+        {
+            "server": {
+                "dev_id": "S2",
+                "server_name": "svr2",
+                "domain": "biasc.be",
+                "ip-address": "10.2.3.2",
+                "os": "linux",
+                "server_type": "vm",
+                "services": [{
+                        "service": "flask",
+                        "service_type": "vm",
+                        "protocol": "tcp",
+                        "port": "8089"
+                    },
+                    {
+                        "service": "db",
+                        "service_type": "vm",
+                        "protocol": "tcp",
+                        "port": "1521"
+                    }
+                ]
+            }
+        },
+        {
+            "server": {
+                "dev_id": "S3",
+                "server_name": "svr3",
+                "domain": "biasc.be",
+                "ip-address": "10.2.3.3",
+                "os": "linux",
+                "server_type": "vm",
+                "services": [{
+                        "service": "dns",
+                        "service_type": "vm",
+                        "protocol": "tcp",
+                        "port": "8089"
+                    },
+                    {
+                        "service": "ntp",
+                        "service_type": "vm",
+                        "protocol": "tcp",
+                        "port": "8089"
+                    },
+                    {
+                        "service": "dhcp",
+                        "service_type": "docker",
+                        "protocol": "udp",
+                        "port": "67"
+                    }
+                ]
+            }
+        }
+    ]
+}
