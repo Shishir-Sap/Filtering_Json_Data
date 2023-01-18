@@ -1,7 +1,7 @@
 import json
-
+import yaml
 # load json file
-with open('Webex Groups\data.json') as json_file:
+with open('data.json') as json_file:
     data = json.load(json_file)
 
 # Write a Python script to select the name of the first person in the first group
@@ -48,3 +48,11 @@ for group in data['groups']:
 # print the lists
 print("Names:", names)
 print("Emails:", emails)
+
+
+print('')
+print(">>>>>>>>>>>>>>>>>>>")
+print('convert json to yaml')
+print('>>>>>>>>>>>>>>>>>>>>>')
+yaml_data = yaml.dump(data)
+print(yaml_data)
