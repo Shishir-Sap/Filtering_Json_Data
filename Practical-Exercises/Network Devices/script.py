@@ -1,7 +1,7 @@
 import json
-
+import yaml
 # load the JSON data from file
-with open('Network Devices\data.json', 'r') as json_file:
+with open('data.json', 'r') as json_file:
     data = json.load(json_file)
 
 print("----------------------1--------------------------------------")
@@ -49,4 +49,9 @@ for device in data['rack']:
 
             # print the interface name and IP address
             print("Interface:", interface_name)
-            print("IP Address:", ip_address)
+print('')
+print(">>>>>>>>>>>>>>>>>>>>")
+print('Convert json to yaml')
+print(">>>>>>>>>>>>>>>>>>>>")
+yaml_data = yaml.dump(data)
+print(yaml_data)
