@@ -1,7 +1,7 @@
 import json
 
 # load the JSON data from file
-with open('data.json', 'r') as json_file:
+with open('Network Devices\data.json', 'r') as json_file:
     data = json.load(json_file)
 
 print("----------------------1--------------------------------------")

@@ -1,6 +1,6 @@
 import json
 
-with open("data.json") as json_file:
+with open("Network Services\data.json") as json_file:
     data = json.load(json_file)
 print("--------------------1----------------------")
 # Write Python code to make a list of all servers, services, ip addresses, protocol/ports

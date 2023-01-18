@@ -1,7 +1,7 @@
 import json
 
 # load json file
-with open('data.json') as json_file:
+with open('Webex Groups\data.json') as json_file:
     data = json.load(json_file)
 
 # Write a Python script to select the name of the first person in the first group
