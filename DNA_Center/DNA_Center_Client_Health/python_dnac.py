@@ -7,7 +7,7 @@ print("Current date and time: ")
 print(datetime.datetime.now())
 # HARD CODED VARIABLES
 DNAC_scheme = 'https://'
-DNAC_authority = 'sandboxdnac.cisco.com'
+DNAC_authority = 'sandboxdnac2.cisco.com'
 DNAC_port = ':443'
 DNAC_path_token = '/dna/system/api/v1/auth/token'
 DNAC_path = '/dna/intent/api/v1/network-device'
